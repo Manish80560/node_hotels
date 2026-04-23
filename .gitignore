@@ -1,0 +1,4 @@
+# no need to access the file under this directory
+# Ignore node_modules directory
+node_modules/
+
