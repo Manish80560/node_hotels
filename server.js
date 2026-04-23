@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+// const port = 3000  //because it has been delcared in .env file so no need to declare here
 
 // mkae data readable
 app.use(express.json());
@@ -8,6 +8,8 @@ app.use(express.json());
 
 // Importing the database
 const db = require('./db')    // here variable name is same as fileName
+
+require('dotenv').config();   // to access the environment variable from .env file
 
 // // // Importing the person model 
 // // now no need here because it has already a personRoutes file 
@@ -59,6 +61,7 @@ app.get('/', (req, res) => {
 //     res.send("data is saved")
 // })
 
+const port = process.env.PORT || 3000;   // to access the port number from .env file and if it is not declare then it will take default port number 3000
 app.listen(port, () => {
   console.log(`Server is running (live) on port ${port}`)
 })

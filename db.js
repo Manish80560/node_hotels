@@ -36,8 +36,10 @@ D -    Delete -     delete
 
 
 const mongoose = require("mongoose");
+require('dotenv').config();   // to access the environment variable from .env file
 
-const mongoURL = "mongodb://127.0.0.1:27017/hotels";
+// const mongoURL = process.env.MONGODB_URL_LOCAL;   // for the local access and testing purpose
+const mongoURL = process.env.MONGODB_URL;        // for the public access purpose 
 
 async function connectDB() {
     try {
