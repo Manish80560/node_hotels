@@ -61,13 +61,21 @@ salary: Number (Person's salary)
 Example:
 
 {
+
   "name": "John Doe",
+  
   "age": 30,
+  
   "work": "waiter",
+  
   "mobile": "123-456-7890",
+  
   "email": "john@example.com",
+  
   "address": "123 Main Street",
+  
   "salary": 30000
+  
 }
 
 **Menu Item**
@@ -84,15 +92,23 @@ num_sales: Number (Number of sales for the item, default is 0)
 Example:
 
 {
+
   "name": "Spicy Chicken Curry",
+  
   "price": 12.99,
+  
   "taste": "spicy",
+  
   "is_drink": false,
+  
   "ingredients": ["chicken", "spices", "vegetables"],
+  
   "num_sales": 50
+  
 }
 
 **Usage**
 
 **Install Dependencies:**
+
 npm install
